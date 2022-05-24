@@ -1,0 +1,17 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: Unreal Engine
+  logo: /assets/images/sections/skills/kubernetes.png
+  summary: "Capable of developing and deploying physics based simulations with the Unreal Engine in C++ and Blueprints. Experienced in writing Kubernetes controllers for CRDs."
+  url: "https://www.unrealengine.com/en-US"
