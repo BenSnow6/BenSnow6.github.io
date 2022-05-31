@@ -31,6 +31,13 @@ socialLinks:
 - name: Github
   icon: "fab fa-github"
   url: "https://github.com/BenSnow6"
+- name: Twitter
+  icon: "fab fa-twitter"
+  url: "https://twitter.com/Snowbobadger"
+# - name: LinkedIn
+#   icon: "fab fa-LinkedIn-square"
+#   url: "https://www.linkedin.com/in/ben-snow-6775637b/"  need to find ICON!!!
+
 
 # your soft skills
 # give the percentage between 50 to 100 with 5 intervals.
