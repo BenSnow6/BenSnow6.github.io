@@ -12,6 +12,6 @@ section:
 # Give a summary of you each skill in the summary section.
 skills:
 - name: Unreal Engine
-  logo: "images/sections/skills/docker.svg"
+  logo: "images/sections/skills/unreal_engine_logo.svg"
   summary: "Capable of developing and deploying physics based simulations with the Unreal Engine in C++ and Blueprints. Experienced in numerical solutions of "
   url: "https://www.unrealengine.com/en-US"
