@@ -21,28 +21,36 @@ buttons:
 
 # your projects
 projects:
-- name: Kubernetes
-  logo: /images/sections/projects/kubernetes.png
-  role: Contributor
-  timeline: "March 2018 - Present"
-  repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
-  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-  summary: Production-Grade Container Scheduling and Management.
-  tags: ["professional", "kubernetes", "cloud"]
+- name: Drone delivery research
+  logo: /images/sections/projects/drone_orange.jpg
+  role: Research assistant
+  timeline: "Feb 2022 - Present"
+  # repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  url: "https://www.e-drone.org/"  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: Do you save money, energy, time or risk? I am developing a Unity game in C# to understand the tradeoffs of these factors and more when it comes to drones being used for last mile logistics.
+  tags: ["Professional", "Unity3D", "C#", "Research", "Academic"]
 
-- name: Tensorflow
-  logo: /images/sections/projects/tensorflow.png
-  role: Developer
-  timeline: "Jun 2018 - Present"
-  repo: https://github.com/tensorflow/tensorflow
-  #url: ""
-  summary: An Open Source Machine Learning Framework for Everyone.
-  tags: ["professional", "machine-learning","academic"]
+- name: Hovercraft pilot training simulator
+  logo: /images/sections/projects/ghl.png
+  role: Research Engineer
+  timeline: "Apr 2020 - Present"
+  # repo: https://github.com/tensorflow/tensorflow
+  url: "https://www.youtube.com/watch?v=fW1yrfLfIqA"
+  summary: Hovercraft are expensive, can't we make a simulator instead? I researched and developed a physics based driving simulator for training hovercraft pilots for Griffon Hoverwork Ltd. to allow them to do exactly that!
+  tags: ["Professional", "Simulations","Academic", "C++", ]
 
-- name: Toha
-  logo: /images/sections/projects/toha.png
-  role: Owner
-  timeline: "Jun 2019 - Present"
-  repo: https://github.com/hossainemruz/toha
-  summary: A Hugo theme for personal portfolio.
-  tags: ["hobby","hugo","theme","professional"]
+- name: Magnetotransport in thin cobalt films for spintronics applications
+  logo: /images/sections/projects/flake.png
+  role: MPhys Researcher
+  timeline: "Sept 2018 - Apr 2019"
+  url: "https://github.com/BenSnow6/Semester-2-MPhys-report/blob/master/Ben%20Snow%20Semester%202%20report.pdf"
+  summary: Can we use heat and magnetism to speed up computers and save energy? In my MPhys research I led an investigation into the effects of magnetisation direction and temperature gradient on resistivity of a 2D cobalt film on hBN and SiO2 substrates for graphene spintronics applications to find out if it's possible.
+  tags: ["Research","Academic","Physics","Laboratory", "Graphene"]
+
+- name: Neutrinoless double Beta Decay and the theory behind the possible Majorana nature of the neutrino
+  logo: /images/sections/projects/double.png
+  role: MPhys Researcher
+  timeline: "Apr 2018 - May 2018"
+  url: "https://github.com/BenSnow6/NeutrinolessDoubleBeta/blob/main/Neutrinoless%20double%20Beta%20Decay%20and%20the%20theory%20behind%20the%20possible%20Majorana%20nature%20of%20the%20neutrino.pdf"
+  summary: The game, Mrs Hudson, is on! The game here being the quest to find Neutrinoless Double Beta decay and show that neutrinos act as their own antiparticles. Here I derive from first principles the conservation laws surrounding Majorana particles from the Dirac equation and discuss their impact.
+  tags: ["Research","Academic","Physics","Theoretical"]

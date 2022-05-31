@@ -48,10 +48,11 @@ degrees:
     url: "https://github.com/BenSnow6/Semester-1-MPhys-Report/blob/master/Semester%201%20Ben%20Snow.pdf"
   - title: Magnetotransport in thin cobalt films for spintronics applications
     url: "https://github.com/BenSnow6/Semester-2-MPhys-report/blob/master/Ben%20Snow%20Semester%202%20report.pdf"
-
   extracurricularActivities: #(optional)
   - Juggling and Circus society
   - Climbing and bouldering society
+
+
 - name: Year abroard
   icon: fa-university
   timeframe: 2017-2018
@@ -68,7 +69,13 @@ degrees:
     - name: Graduate Solid State Physics
     - name: Scientific Computing
     - name: Quantum Physics
-    - name: Nuclear and Particle Physics
+    - name: Topics in Nuclear and Particle Physics
+
+  publications: #(optional)
+  - title: Neutrinoless double Beta Decay and the theory behind the possible Majorana nature of the neutrino
+    url: "https://github.com/BenSnow6/NeutrinolessDoubleBeta/blob/main/Neutrinoless%20double%20Beta%20Decay%20and%20the%20theory%20behind%20the%20possible%20Majorana%20nature%20of%20the%20neutrino.pdf"
+  - title: A finite difference approach to solving the Navier-Stokes equations for the 2-D Lid Driven Cavity problem 
+    url: "https://github.com/BenSnow6/2-D-Lid-Driven-Cavity-problem/blob/master/A%20finite%20difference%20approach%20to%20solving%20the%20Navier-Stokes%20equations%20for%20the%202-D%20Lid%20Driven%20Cavity%20problem.pdf"
   extracurricularActivities: #(optional)
   - Hiking, camping, climbing, kyacking, mountain biking, and caving with UMD Adventure program
   - UMD Juggling and Circus society
