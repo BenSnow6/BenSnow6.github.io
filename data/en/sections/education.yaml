@@ -11,16 +11,16 @@ section:
   # hideTitle: true
 
 degrees:
-- name: B.Sc. in Computer Science & Engineering
+- name: Master of Physics (MPhys)
   icon: fa-graduation-cap
-  timeframe: 2013-2017
+  timeframe: 2015-2019
   institution:
-    name: Chittagong University of Engineering & Technology
-    url: "#"
+    name: The University of Manchester
+    url: "https://www.manchester.ac.uk/"
   grade: #(optional)
-    scale: CGPA
-    achieved: 3.28
-    outOf: 4
+    scale: Grade
+    achieved: 2:1
+    outOf: "/n"
   # takenCourses: #(optional)
   #   # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
   #   showGrades: true
