@@ -11,16 +11,16 @@ section:
   # hideTitle: true
 
 degrees:
-- name: Master of Physics (MPhys)
+- name: Master of Physics (MPhys) - 2:1 Upper Second Class Honours
   icon: fa-graduation-cap
   timeframe: 2015-2019
   institution:
     name: The University of Manchester
     url: "https://www.manchester.ac.uk/"
-  grade: #(optional)
-    scale: Grade
-    achieved: 2:1
-    outOf: "/n"
+  # grade: #(optional)
+  #   scale: Grade
+  #   achieved: 2:1
+  #   outOf: "/n"
   # takenCourses: #(optional)
   #   # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
   #   showGrades: true
