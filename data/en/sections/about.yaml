@@ -32,11 +32,11 @@ socialLinks:
   icon: "fab fa-github"
   url: "https://github.com/BenSnow6"
 - name: Twitter
-  icon: "fab fa-linkedin"
+  icon: "fab fa-twitter"
   url: "https://twitter.com/Snowbobadger"
-# - name: LinkedIn
-#   icon: "fab fa-LinkedIn-square"
-#   url: "https://www.linkedin.com/in/ben-snow-6775637b/"  need to find ICON!!!
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/ben-snow-6775637b/"
 
 
 # your soft skills
