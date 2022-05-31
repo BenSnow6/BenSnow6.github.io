@@ -11,6 +11,21 @@ section:
   # hideTitle: true
 
 degrees:
+- name: Doctor of Engineering (EngD) - Currently on 12 month interruption of studies until 01/01/2023
+  icon: fa-school
+  timeframe: 2019-present
+  institution:
+    name: Bournemouth University
+    url: https://www.bournemouth.ac.uk/
+  
+  takenCourses: #(optional)
+    # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+    showGrades: false
+    courses:
+    - name: Data Mining and Analytic Technologies (91%)
+    - name: Computer Vision (86%)
+    - name: Animation Software Engineering 
+    - name: CGI Techniques
 - name: Master of Physics (MPhys)
   icon: fa-graduation-cap
   timeframe: 2015-2019
@@ -20,44 +35,41 @@ degrees:
   grade: #(optional)
     scale: Grade
     achieved: 2:1 Upper Second Class Honours
-  # takenCourses: #(optional)
-  #   # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
-  #   showGrades: true
-  #   courses:
-  #   - name: Data Structures and Algorithm
-  #     achieved: 3.75
-  #     outOf: 4
-  #   - name: Network Security
-  #     achieved: 3.80
-  #     outOf: 4
-  #   - name: Operating System
-  #     achieved: 3.5
-  #     outOf: 4
-  #   - name: Artificial Intelligent
-  #     achieved: 3.75
-  #     outOf: 4
+  takenCourses: #(optional)
+    # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+    showGrades: false
+    courses:
+    - name: Advanced Statistical Physics
+    - name: Physics of Fluids
+    - name: Mathematics of Waves and Fields
+    - name: Lagrangian Dynamics
   publications: #(optional)
-  - title: An IoT based System for Riverine Vessel Monitoring
-    url: "#"
+  - title: Magnetoressistance in thin cobalt films on hexagonal boron nitride and silicon dioxide substrates
+    url: "https://github.com/BenSnow6/Semester-1-MPhys-Report/blob/master/Semester%201%20Ben%20Snow.pdf"
+  - title: Magnetotransport in thin cobalt films for spintronics applications
+    url: "https://github.com/BenSnow6/Semester-2-MPhys-report/blob/master/Ben%20Snow%20Semester%202%20report.pdf"
+
   extracurricularActivities: #(optional)
-  - Participated in various national and international Programming contests
-  - Worked as instructor of CUET Computer Club
-- name: Higher Secondary School Certificate
+  - Juggling and Circus society
+  - Climbing and bouldering society
+- name: Year abroard
   icon: fa-university
-  timeframe: 2010-2012
+  timeframe: 2017-2018
   institution:
-    name: Sristy College of Tangail
+    name: University of Maryland College Park
     # url: "#"
   grade: #(optional)
-    scale: GPA
-    achieved: 5
-    outOf: 5
-- name: Secondary School Certificate
-  icon: fa-school
-  timeframe: 2005-2010
-  institution:
-    name: Lowhati M. Azhar Memorial High School
-  grade: #(optional)
-    scale: GPA
-    achieved: 4.38
-    outOf: 5
+    scale: Grade
+    achieved: First class equivalent
+  takenCourses: #(optional)
+    # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+    showGrades: false
+    courses:
+    - name: Graduate Solid State Physics
+    - name: Scientific Computing
+    - name: Quantum Physics
+    - name: Nuclear and Particle Physics
+  extracurricularActivities: #(optional)
+  - Hiking, camping, climbing, kyacking, mountain biking, and caving with UMD Adventure program
+  - UMD Juggling and Circus society
+  - UMD Rocket League E-Sports society
