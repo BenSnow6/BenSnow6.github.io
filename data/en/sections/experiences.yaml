@@ -15,7 +15,7 @@ experiences:
     url: "https://www.e-drone.org/"
     location: Remote
     # company overview
-    overview: Research initiative involving Bournemouth University, University of Southampton, University of Leeds, and University College London to investigate the feasibility of Drone delivery for last mile logistics and the NHS.
+    overview: Research initiative involving Bournemouth University, University of Southampton, University of Leeds, and University College London to investigate the feasibility of Drone delivery for last-mile logistics and the NHS.
   positions:
   - designation: Research Assistant
     start: Feb 2022
@@ -24,14 +24,14 @@ experiences:
     # give some points about what was your responsibilities at the company.
     responsibilities:
     - Design and develop a Drone delivery game to investigate tradeoffs between risk, time, and energy in drone delivery scenarios.
-    - Produce high quality code and research to a publishable standard and submit papers as first author to journals and conferences
-    - Deploy game on android play store and ios app store to general public for data collection and analysis
+    - Produce high-quality code and research to a publishable standard and submit papers as the first author to journals and conferences
+    - Deploy game on android play store and ios app store to the general public for data collection and analysis
 
 - company:
     name: Griffon Hoverwork Ltd.
     url: "https://www.griffonhoverwork.com/"
     location: Remote
-    overview: Griffon Hoverwork Ltd. are a hovercraft manufacturer and designer based in Southampton, UK. They are interested in leveraging the high end games engine, Unreal Engine 4, to develop a driving simulator to help train and test trainee pilots to drive their craft.
+    overview: Griffon Hoverwork Ltd. are a hovercraft manufacturer and designer based in Southampton, UK. They are interested in leveraging the high-end games engine, Unreal Engine 4, to develop a driving simulator to help train and test trainee pilots to drive their craft.
   positions:
   - designation: Research Engineer
     start: March 2020
@@ -39,4 +39,4 @@ experiences:
     responsibilities:
     - Write lots of example codes.
     - Read lots of examples.
-    - Drive a real life hovercraft to understand the subtlties of learning to drive and developing the lesson plan
+    - Drive a real-life hovercraft to understand the subtleties of learning to drive and develop the lesson plan

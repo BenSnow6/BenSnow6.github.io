@@ -20,7 +20,7 @@ resume: "files/BenSnowResume.pdf"
 # a summary about you
 summary: 'I am a passionate research engineer with 2 years of working experience. 
 I am keenly interested in Machine learning, specifically in productionisation of machine learning from proof-of-concept
- research to usable, scalable business products. In my research I built a
+ research into usable, scalable business products. In my research, I built a
   realistic [Hovercraft Training Simulator](https://www.youtube.com/watch?v=fW1yrfLfIqA) in C++ with 
   the Unreal Engine for Griffon Hoverwork Ltd. I am currently looking to gain more experience in MLOps 
   and deploying Machine Learning models in industry.'
