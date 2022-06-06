@@ -49,3 +49,12 @@ softSkills:
 - name: Team Work
   percentage: 90
   color: yellow
+- name: Mathematics
+  percentage: 90
+  color: sky
+- name: Presentations
+  percentage: 90
+  color: orange
+- name: Report writing
+  percentage: 90
+  color: pink

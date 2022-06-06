@@ -25,7 +25,6 @@ projects:
   logo: /images/sections/projects/drone_orange.jpg
   role: Research assistant
   timeline: "Feb 2022 - Present"
-  # repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
   url: "https://www.e-drone.org/"  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
   summary: Do you save money, energy, time or risk? I am developing a Unity game in C# to understand the tradeoffs of these factors and more when it comes to drones being used for last-mile logistics.
   tags: ["professional", "Unity3D", "C#", "Research", "academic"]
@@ -34,7 +33,6 @@ projects:
   logo: /images/sections/projects/ghl.png
   role: Research Engineer
   timeline: "Apr 2020 - Present"
-  # repo: https://github.com/tensorflow/tensorflow
   url: "https://www.youtube.com/watch?v=fW1yrfLfIqA"
   summary: Hovercraft are expensive, can't we make a simulator instead? I researched and developed a physics-based driving simulator for training hovercraft pilots for Griffon Hoverwork Ltd. to allow them to do exactly that!
   tags: ["professional", "Simulations","academic", "C++", ]
