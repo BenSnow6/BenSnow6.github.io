@@ -15,3 +15,63 @@ skills:
   logo: "images/sections/skills/Unreal_Engine_Logo.svg"
   summary: "Capable of developing and deploying physics-based simulations with the Unreal Engine in C++ and Blueprints."
   url: "https://www.unrealengine.com/en-US"
+
+
+- name: Python
+  logo: "images/sections/skills/python.png"
+  summary: "3 years experience including writing a machine learning pipeline for Monocular Depth estimation from an RGB image. Numerous data science packages including modin.pandas, numpy, scikitlearn, linting with pylint and flake8, doccumentation with docstrings and unit testing with pytest."
+  url: "https://www.unrealengine.com/en-US"
+
+
+- name: C++
+  logo: "images/sections/skills/cpp.png"
+  summary: ""
+  url: "https://www.unrealengine.com/en-US"
+
+
+
+- name: C#
+  logo: "images/sections/skills/csharp.png"
+  summary: "Object oriented programming for game design using various design patterns such as the command and observer patterns. Use of interfaces, inheritance, and polymorphism."
+  url: "https://www.unrealengine.com/en-US"
+
+
+
+- name: git
+  logo: "images/sections/skills/git.png"
+  summary: "Capable of developing and deploying physics-based simulations with the Unreal Engine in C++ and Blueprints."
+  url: "https://www.unrealengine.com/en-US"
+
+
+
+
+- name: Matlab
+  logo: "images/sections/skills/Matlab.png"
+  summary: "Capable of developing and deploying physics-based simulations with the Unreal Engine in C++ and Blueprints."
+  url: "https://www.unrealengine.com/en-US"
+
+
+
+
+- name: Latex
+  logo: "images/sections/skills/latex.png"
+  summary: "Capable of developing and deploying physics-based simulations with the Unreal Engine in C++ and Blueprints."
+  url: "https://www.unrealengine.com/en-US"
+
+
+
+
+- name: Unity
+  logo: "images/sections/skills/unity.png"
+  summary: "Capable of developing and deploying physics-based simulations with the Unreal Engine in C++ and Blueprints."
+  url: "https://www.unrealengine.com/en-US"
+
+
+
+
+- name: Origin
+  logo: "images/sections/skills/origin.png"
+  summary: "Experience with Origin to perform data analysis on Lock-in amplifier data applying various curve fitting techniques to produce high quality plots."
+  url: "https://www.originlab.com/"
+
+
