@@ -3,7 +3,7 @@ section:
   name: Projects
   id: projects
   enable: true
-  weight: 4
+  weight: 5
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
@@ -45,7 +45,7 @@ projects:
   summary: Can we use heat and magnetism to speed up computers and save energy? In my MPhys research, I investigated the effects of magnetisation direction and temperature gradient on the resistivity of a 2D cobalt film on hBN and SiO2 substrates for graphene spintronics applications to find out if it's possible.
   tags: ["Research","academic","Physics","Laboratory", "Graphene"]
 
-- name: Neutrinoless double Beta Decay and the theory behind the possible Majorana nature of the neutrino
+- name: Neutrinoless Double Beta Decay and the theory behind the possible Majorana nature of the neutrino
   logo: /images/sections/projects/double.png
   role: MPhys Researcher
   timeline: "Apr 2018 - May 2018"
