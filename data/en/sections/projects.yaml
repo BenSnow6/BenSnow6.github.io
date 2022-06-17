@@ -42,7 +42,7 @@ projects:
   role: MPhys Researcher
   timeline: "Sept 2018 - Apr 2019"
   url: "https://github.com/BenSnow6/Semester-2-MPhys-report/blob/master/Ben%20Snow%20Semester%202%20report.pdf"
-  summary: Can we use heat and magnetism to speed up computers and save energy? In my MPhys research I investigated the effects of magnetisation direction and temperature gradient on resistivity of a 2D cobalt film on hBN and SiO2 substrates for graphene spintronics applications to find out if it's possible.
+  summary: Can we use heat and magnetism to speed up computers and save energy? In my MPhys research, I investigated the effects of magnetisation direction and temperature gradient on the resistivity of a 2D cobalt film on hBN and SiO2 substrates for graphene spintronics applications to find out if it's possible.
   tags: ["Research","academic","Physics","Laboratory", "Graphene"]
 
 - name: Neutrinoless double Beta Decay and the theory behind the possible Majorana nature of the neutrino

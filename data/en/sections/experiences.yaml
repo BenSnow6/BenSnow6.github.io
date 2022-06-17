@@ -23,9 +23,9 @@ experiences:
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Design and develop a Drone delivery game to investigate tradeoffs between risk, time, and energy in drone delivery scenarios.
+    - Design and develop a Drone delivery game to investigate tradeoffs between risk, time, and energy in drone delivery scenarios
     - Produce high-quality code and research to a publishable standard and submit papers as the first author to journals and conferences
-    - Deploy game on android play store and ios app store to the general public for data collection and analysis
+    - Deploy the game on android play store and ios app store to the general public for data collection and analysis
 
 - company:
     name: Griffon Hoverwork Ltd.
@@ -37,8 +37,8 @@ experiences:
     start: March 2020
     end: currently interrupting studies until 01/01/2023
     responsibilities:
-    - Two weekly report writing and project management with RAG action log, gantt chart, and continous documentation of project status.
-    - Work with stakeholders to define scope of project
+    - Two weekly report writing and project management with RAG action log, gantt chart, and continuous documentation of project status
+    - Work with stakeholders to define the scope of the project
     - C++ and blueprint development of hovercraft training simulator in Unreal Engine 4
     - Reading and implementing research papers to accurately simulate hovercraft physics
     - Drive a real-life hovercraft to understand the subtleties of learning to drive and develop the lesson plan

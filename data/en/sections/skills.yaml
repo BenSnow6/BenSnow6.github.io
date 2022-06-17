@@ -25,14 +25,14 @@ skills:
 
 - name: C++
   logo: "images/sections/skills/cpp.png"
-  summary: "Used in conjunction with Unreal Engine 4 to solve physics equations in real time for the thrust, drag, and lift forces acting on a hovercraft."
+  summary: "Used in conjunction with Unreal Engine 4 to solve physics equations in real-time for the thrust, drag, and lift forces acting on a hovercraft."
   url: "https://cplusplus.com/"
 
 
 
 - name: C#
   logo: "images/sections/skills/csharp.png"
-  summary: "Object oriented programming for game design using various design patterns such as the command and observer patterns. Use of interfaces, inheritance, and polymorphism."
+  summary: "Object-oriented programming for game design using various design patterns such as the command and observer patterns. Use of interfaces, inheritance, and polymorphism."
   url: "https://docs.microsoft.com/en-us/dotnet/csharp/"
 
 
@@ -70,7 +70,7 @@ skills:
 
 - name: Origin
   logo: "images/sections/skills/origin.png"
-  summary: "Experience with Origin to perform data analysis on Lock-in amplifier data applying various curve fitting techniques to produce high quality plots."
+  summary: "Experience with Origin to perform data analysis on Lock-in amplifier data applying various curve fitting techniques to produce high-quality plots."
   url: "https://www.originlab.com/"
 
 
