@@ -44,9 +44,8 @@ skills:
 
 
 
-
 - name: Matlab
-  logo: "images/sections/skills/Matlab.png"
+  logo: "images/sections/skills/matlab.png"
   summary: "Finite difference method for solving the Navier-Stokes equations on a 2D grid for the Lid-Driven cavity problem."
   url: "https://uk.mathworks.com/products/matlab.html"
 
