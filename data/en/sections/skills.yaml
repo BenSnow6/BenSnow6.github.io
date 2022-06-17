@@ -45,18 +45,18 @@ skills:
 
 
 
-# - name: Matlab
-#   logo: "images/sections/skills/Matlab.png"
-#   summary: "Finite difference method for solving the Navier-Stokes equations on a 2D grid for the Lid-Driven cavity problem."
-#   url: "https://uk.mathworks.com/products/matlab.html"
+- name: Matlab
+  logo: "images/sections/skills/Matlab.png"
+  summary: "Finite difference method for solving the Navier-Stokes equations on a 2D grid for the Lid-Driven cavity problem."
+  url: "https://uk.mathworks.com/products/matlab.html"
 
 
 
 
-# - name: Latex
-#   logo: "images/sections/skills/latex.png"
-#   summary: "Report writing and research paper experience with Overleaf including Mathjax."
-#   url: "https://www.overleaf.com/"
+- name: Latex
+  logo: "images/sections/skills/latex.png"
+  summary: "Report writing and research paper experience with Overleaf including Mathjax."
+  url: "https://www.overleaf.com/"
 
 
 
