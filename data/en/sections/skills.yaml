@@ -60,17 +60,17 @@ skills:
 
 
 
-# - name: Unity
-#   logo: "images/sections/skills/unity.png"
-#   summary: "Design and development of a 2D Drone delivery game for public outreach and data collection."
-#   url: "https://unity.com/"
+- name: Unity
+  logo: "images/sections/skills/unity.png"
+  summary: "Design and development of a 2D Drone delivery game for public outreach and data collection."
+  url: "https://unity.com/"
 
 
 
 
-# - name: Origin
-#   logo: "images/sections/skills/origin.png"
-#   summary: "Experience with Origin to perform data analysis on Lock-in amplifier data applying various curve fitting techniques to produce high quality plots."
-#   url: "https://www.originlab.com/"
+- name: Origin
+  logo: "images/sections/skills/origin.png"
+  summary: "Experience with Origin to perform data analysis on Lock-in amplifier data applying various curve fitting techniques to produce high quality plots."
+  url: "https://www.originlab.com/"
 
 
