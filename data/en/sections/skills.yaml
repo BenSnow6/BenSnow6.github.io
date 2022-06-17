@@ -19,52 +19,52 @@ skills:
 
 - name: Python
   logo: "images/sections/skills/python.png"
-  summary: "3 years experience including writing a machine learning pipeline for Monocular Depth estimation from an RGB image. Numerous data science packages including modin.pandas, numpy, scikitlearn, linting with pylint and flake8, doccumentation with docstrings and unit testing with pytest."
-  url: "https://www.unrealengine.com/en-US"
+  summary: "3 years experience including writing a machine learning pipeline for Monocular Depth estimation from an RGB image. Numerous data science packages including modin.pandas, numpy, pytorch, and keras."
+  url: "https://www.python.org/"
 
 
 - name: C++
   logo: "images/sections/skills/cpp.png"
-  summary: ""
-  url: "https://www.unrealengine.com/en-US"
+  summary: "Used in conjunction with Unreal Engine 4 to solve physics equations in real time for the thrust, drag, and lift forces acting on a hovercraft."
+  # url: "https://www.unrealengine.com/en-US"
 
 
 
 - name: C#
   logo: "images/sections/skills/csharp.png"
   summary: "Object oriented programming for game design using various design patterns such as the command and observer patterns. Use of interfaces, inheritance, and polymorphism."
-  url: "https://www.unrealengine.com/en-US"
+  url: "https://docs.microsoft.com/en-us/dotnet/csharp/"
 
 
 
 - name: git
   logo: "images/sections/skills/git.png"
-  summary: "Capable of developing and deploying physics-based simulations with the Unreal Engine in C++ and Blueprints."
-  url: "https://www.unrealengine.com/en-US"
+  summary: "Code versioning for various software projects, integrated with VS Code, my usual IDE."
+  url: "https://github.com/BenSnow6/"
 
 
 
 
 - name: Matlab
   logo: "images/sections/skills/Matlab.png"
-  summary: "Capable of developing and deploying physics-based simulations with the Unreal Engine in C++ and Blueprints."
-  url: "https://www.unrealengine.com/en-US"
+  summary: "Finite difference method for solving the Navier-Stokes equations on a 2D grid for the Lid-Driven cavity problem."
+  url: "https://uk.mathworks.com/products/matlab.html"
 
 
 
 
 - name: Latex
   logo: "images/sections/skills/latex.png"
-  summary: "Capable of developing and deploying physics-based simulations with the Unreal Engine in C++ and Blueprints."
-  url: "https://www.unrealengine.com/en-US"
+  summary: "Report writing and research paper experience with Overleaf including Mathjax."
+  url: "https://www.overleaf.com/"
 
 
 
 
 - name: Unity
   logo: "images/sections/skills/unity.png"
-  summary: "Capable of developing and deploying physics-based simulations with the Unreal Engine in C++ and Blueprints."
-  url: "https://www.unrealengine.com/en-US"
+  summary: "Design and development of a 2D Drone delivery game for public outreach and data collection."
+  url: "https://unity.com/"
 
 
 
