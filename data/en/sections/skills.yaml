@@ -17,61 +17,61 @@ skills:
   url: "https://www.unrealengine.com/en-US"
 
 
-- name: Python
-  logo: "images/sections/skills/python.png"
-  summary: "3 years experience including writing a machine learning pipeline for Monocular Depth estimation from an RGB image. Numerous data science packages including modin.pandas, numpy, pytorch, and keras."
-  url: "https://www.python.org/"
+# - name: Python
+#   logo: "images/sections/skills/python.png"
+#   summary: "3 years experience including writing a machine learning pipeline for Monocular Depth estimation from an RGB image. Numerous data science packages including modin.pandas, numpy, pytorch, and keras."
+#   url: "https://www.python.org/"
 
 
-- name: C++
-  logo: "images/sections/skills/cpp.png"
-  summary: "Used in conjunction with Unreal Engine 4 to solve physics equations in real time for the thrust, drag, and lift forces acting on a hovercraft."
-  url: "https://www.unrealengine.com/en-US"
-
-
-
-- name: C#
-  logo: "images/sections/skills/csharp.png"
-  summary: "Object oriented programming for game design using various design patterns such as the command and observer patterns. Use of interfaces, inheritance, and polymorphism."
-  url: "https://cplusplus.com/"
+# - name: C++
+#   logo: "images/sections/skills/cpp.png"
+#   summary: "Used in conjunction with Unreal Engine 4 to solve physics equations in real time for the thrust, drag, and lift forces acting on a hovercraft."
+#   url: "https://www.unrealengine.com/en-US"
 
 
 
-- name: git
-  logo: "images/sections/skills/git.png"
-  summary: "Code versioning for various software projects, integrated with VS Code, my usual IDE."
-  url: "https://github.com/BenSnow6/"
+# - name: C#
+#   logo: "images/sections/skills/csharp.png"
+#   summary: "Object oriented programming for game design using various design patterns such as the command and observer patterns. Use of interfaces, inheritance, and polymorphism."
+#   url: "https://cplusplus.com/"
 
 
 
-
-- name: Matlab
-  logo: "images/sections/skills/Matlab.png"
-  summary: "Finite difference method for solving the Navier-Stokes equations on a 2D grid for the Lid-Driven cavity problem."
-  url: "https://uk.mathworks.com/products/matlab.html"
+# - name: git
+#   logo: "images/sections/skills/git.png"
+#   summary: "Code versioning for various software projects, integrated with VS Code, my usual IDE."
+#   url: "https://github.com/BenSnow6/"
 
 
 
 
-- name: Latex
-  logo: "images/sections/skills/latex.png"
-  summary: "Report writing and research paper experience with Overleaf including Mathjax."
-  url: "https://www.overleaf.com/"
+# - name: Matlab
+#   logo: "images/sections/skills/Matlab.png"
+#   summary: "Finite difference method for solving the Navier-Stokes equations on a 2D grid for the Lid-Driven cavity problem."
+#   url: "https://uk.mathworks.com/products/matlab.html"
 
 
 
 
-- name: Unity
-  logo: "images/sections/skills/unity.png"
-  summary: "Design and development of a 2D Drone delivery game for public outreach and data collection."
-  url: "https://unity.com/"
+# - name: Latex
+#   logo: "images/sections/skills/latex.png"
+#   summary: "Report writing and research paper experience with Overleaf including Mathjax."
+#   url: "https://www.overleaf.com/"
 
 
 
 
-- name: Origin
-  logo: "images/sections/skills/origin.png"
-  summary: "Experience with Origin to perform data analysis on Lock-in amplifier data applying various curve fitting techniques to produce high quality plots."
-  url: "https://www.originlab.com/"
+# - name: Unity
+#   logo: "images/sections/skills/unity.png"
+#   summary: "Design and development of a 2D Drone delivery game for public outreach and data collection."
+#   url: "https://unity.com/"
+
+
+
+
+# - name: Origin
+#   logo: "images/sections/skills/origin.png"
+#   summary: "Experience with Origin to perform data analysis on Lock-in amplifier data applying various curve fitting techniques to produce high quality plots."
+#   url: "https://www.originlab.com/"
 
 
