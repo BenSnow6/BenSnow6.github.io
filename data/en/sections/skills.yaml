@@ -30,17 +30,17 @@ skills:
 
 
 
-# - name: C#
-#   logo: "images/sections/skills/csharp.png"
-#   summary: "Object oriented programming for game design using various design patterns such as the command and observer patterns. Use of interfaces, inheritance, and polymorphism."
-#   url: "https://docs.microsoft.com/en-us/dotnet/csharp/"
+- name: C#
+  logo: "images/sections/skills/csharp.png"
+  summary: "Object oriented programming for game design using various design patterns such as the command and observer patterns. Use of interfaces, inheritance, and polymorphism."
+  url: "https://docs.microsoft.com/en-us/dotnet/csharp/"
 
 
 
-# - name: git
-#   logo: "images/sections/skills/git.png"
-#   summary: "Code versioning for various software projects, integrated with VS Code, my usual IDE."
-#   url: "https://github.com/BenSnow6/"
+- name: git
+  logo: "images/sections/skills/git.png"
+  summary: "Code versioning for various software projects, integrated with VS Code, my usual IDE."
+  url: "https://github.com/BenSnow6/"
 
 
 
