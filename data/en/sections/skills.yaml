@@ -26,14 +26,14 @@ skills:
 - name: C++
   logo: "images/sections/skills/cpp.png"
   summary: "Used in conjunction with Unreal Engine 4 to solve physics equations in real time for the thrust, drag, and lift forces acting on a hovercraft."
-  # url: "https://www.unrealengine.com/en-US"
+  url: "https://www.unrealengine.com/en-US"
 
 
 
 - name: C#
   logo: "images/sections/skills/csharp.png"
   summary: "Object oriented programming for game design using various design patterns such as the command and observer patterns. Use of interfaces, inheritance, and polymorphism."
-  url: "https://docs.microsoft.com/en-us/dotnet/csharp/"
+  url: "https://cplusplus.com/"
 
 
 
