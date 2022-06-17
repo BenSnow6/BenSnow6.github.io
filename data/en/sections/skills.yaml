@@ -17,10 +17,10 @@ skills:
   url: "https://www.unrealengine.com/en-US"
 
 
-# - name: Python
-#   logo: "images/sections/skills/python.png"
-#   summary: "3 years experience including writing a machine learning pipeline for Monocular Depth estimation from an RGB image. Numerous data science packages including modin.pandas, numpy, pytorch, and keras."
-#   url: "https://www.python.org/"
+- name: Python
+  logo: "images/sections/skills/python.png"
+  summary: "3 years experience including writing a machine learning pipeline for Monocular Depth estimation from an RGB image. Numerous data science packages including modin.pandas, numpy, pytorch, and keras."
+  url: "https://www.python.org/"
 
 
 # - name: C++
