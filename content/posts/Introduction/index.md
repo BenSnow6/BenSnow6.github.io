@@ -20,11 +20,11 @@ The goals of this investigation are twofold
 - Apply MLOps techniques to serve a production model in the cloud
 
 A few of the techniques to be included are the following: Unit testing, CI/CD, cloud serving, monitoring, and model experimentation and evaluation.
-If you wish to read the original Jupyter notebook from the project then feel free to read it here. (Link to be added)
+If you wish to read the original Jupyter notebook from the project then feel free to read it here. (Link to be added after anonymity is included)
 
 ### Project proposal
 
-The goal of the original project was to create a dataset of RGBA and depth image pairs from the popular video game Grand Theft Auto V, GTAV. This dataset would then be used to train a convolutional neural network to predict a depth image from an RGBA image. Using the trained model, a dataset of real life images was used to evaluate the model's ability to predict real world depth after training on this synthetic video game data. I will upload the entire project proposal document for you to read at your leisure, but this is the gist of the project.
+The goal of the original project was to create a dataset of RGBA and depth image pairs from the popular video game Grand Theft Auto V, GTAV. This dataset would then be used to train a convolutional neural network to predict a depth image from an RGBA image. Using the trained model, a dataset of real-life images was used to evaluate the model's ability to predict real-world depth after training on this synthetic video game data. I will upload the entire project proposal document for you to read at your leisure, but this is the gist of the project.
 
 
 {{< img src="images/colour_simple.png" align="center" >}} 
@@ -39,22 +39,22 @@ The goal of the original project was to create a dataset of RGBA and depth image
 ### Approach
 
 
-I will read through the project as it currently stands and will critique the project organisation and structure. I'll then follow the data from collection to pre-processing to get a feel for the data pipeline, then look at how the model architectures were defined. After this I'll see how training, validation and testing loops worked and give them a good talking to. I'll see what analysis techniques were used to analyse the predictions from the trained models and how these were interpreted. After this analysis, I will propose a series of improvements that will be made to take the project to a production standard.
+I will read through the project as it currently stands and will critique the project's organisation and structure. I'll then follow the data from collection to pre-processing to get a feel for the data pipeline, then look at how the model architectures were defined. After this, I'll see how training, validation, and testing loops worked and give them a good talking to. I'll see what analysis techniques were used to analyse the predictions from the trained models and how these were interpreted. After this analysis, I will propose a series of improvements that will be made to take the project to a production standard.
 
 
 ### Project structure
 
-Put simply, the project structure is poor. This is somewhat to be expected from a group of three masters students working together on their own jupyter notebooks and computers. Examples of bad practices found are:
+Put simply, the project structure is poor. This is somewhat to be expected from a group of three master's students working together on their own jupyter notebooks and computers. Examples of bad practices found are:
  - Inconsistent folder and file naming conventions (or none at all)
  - Monolithic jupyter notebooks
  - Attempt at containerisation but not fully working
  - No full list of package requirements
- - Different flietypes stored in same folders (models stored together with README and datasets)
+ - Different filetypes stored in the same folders (models stored together with README and datasets)
  - Just check out the structure below...
 
 {{< img src="images/project structure.png" align="center" >}} 
 *Figure 3: Typical organisation structure of a group of researchers working together on a data science project.*
-{{< vs 3 >}}
+{{< vs 2 >}}
 
 
 ### Data acquisition
@@ -77,10 +77,12 @@ During the project, only the Simple and moderate datasets were collected. The mo
 ### Data preprocessing
 
 Since the Simple collection dataset is only small, we will focus on the work done with the Moderate dataset.
-Structuring of this dataset is defined in a .csv file that lists the splitting of data by weather conditions.
-A python dataset class was created to read the data from a local machine to a pytorch dataset. Unfortunately, the method of reading data to this class is inefficient and clumsy. It relies on the use of "f-strings" to read in files from different folders, many "if-else" statements, and hardcoded paths. There is little doccumentation of the code and no unit testing for individual components of the pipeline. Although this code is not clean, it works for the specific use case it was written for, which tends to be the case in research environments.
+The structuring of this dataset is defined in a .csv file that lists the splitting of data by weather conditions.
+A python dataset class was created to read the data from a local machine to a pytorch dataset. Unfortunately, the method of reading data in this class is inefficient and clumsy. It relies on the use of "f-strings" to read in files from different folders, many "if-else" statements, and hardcoded paths. There is little documentation  of the code and no unit testing for individual components of the pipeline. Although this code is not clean, it works for the specific use case it was written for, which tends to be the case in research environments.
 
-The Moderate dataset class can be seen below, beware of some codesmells...
+Some data preprocessing was performed on the dataset including some transposes and conversions to torch tensors from numpy arrays.
+
+The Moderate dataset class can be seen below, beware of some code smells...
 
 ``` python
 class ModerateDataset(Dataset):
@@ -163,9 +165,9 @@ Creating an instance of this dataset class into the variable ```total_data``` al
 total_data = ModerateDataset(trans_on=True) ## Instantiating the dataset
 ```
 
-It was of importance to establish the separation of three datasets: training, validation and testing. Training data was used to train the neural network model and validation data is used to check that the model was not overfitting to the training data. Testing data was used to check the performance of the trained model on unseen data to evaluate performance with a set of predefined metrics, defined in a later section.
+It was of importance to establish the separation of three datasets: training, validation, and testing. Training data was used to train the neural network model and validation data is used to check that the model was not overfit to the training data. Testing data was used to check the performance of the trained model on unseen data to evaluate performance with a set of predefined metrics, defined in a later section.
 
-A train, validation, testing split of 80/10/10 has been used to create three datasets: ```train_dataset```, ```val_dataset``` and ```test_dataset```. This split is commonly used in machine learning research. These datasets all inherit from the ```ModerateDasaset``` class.
+A train, validation and, testing split of 80/10/10 has been used to create three datasets: ```train_dataset```, ```val_dataset``` and ```test_dataset```. These datasets all inherit from the ```ModerateDasaset``` class.
 
 ``` python
 train_size = int(0.8 * len(total_Data)) # Size of training dataset (80% of total)
@@ -174,7 +176,7 @@ train_dataset, val_dataset, test_dataset = torch.utils.data.random_split(total_D
 ```
 
 
- For each of these datasets, a data loader was created to load in a batch of images at once instead of loading the entire dataset to memory. To train the model, the training and validation dataloaders are used. This ensures that no testing data is used in any step of training the model.
+ For each of these datasets, a data loader was created to load a batch of images at once instead of loading the entire dataset to memory. To train the model, the training and validation dataloaders are used. This ensures that no testing data is used in any step of training the model.
 
 ``` python
 batch_sz = 16 # Batch size
@@ -182,3 +184,28 @@ tr_dl  = DataLoader(train_dataset,  batch_size=batch_sz, shuffle=True,  num_work
 val_dl = DataLoader(val_dataset,  batch_size=batch_sz, shuffle=True,  num_workers=0)   # Validation dataloader
 test_dl = DataLoader(test_dataset,  batch_size=batch_sz, shuffle=True,  num_workers=0) # Test dataloader
 ```
+
+### Defining the model
+
+A simple CNN architecture was developed as a baseline model to compare performance against. Ideally, the team planned on using a more complex model to experiment with but time constraints made this unfeasable. The neural network is defined with pytorch to be the following:
+
+``` python
+net = nn.Sequential(
+    nn.Conv2d(in_channels=3,  out_channels=6, kernel_size=3, stride=1, padding=1), 
+    nn.ReLU(),
+    nn.Conv2d(in_channels=6, out_channels=12, kernel_size=3, stride=1, padding=1),
+    nn.ReLU(),
+    nn.ConvTranspose2d(in_channels = 12, out_channels=6, kernel_size=3, stride=1, padding=1),
+    nn.ReLU(),
+    nn.ConvTranspose2d(in_channels = 6, out_channels=1, kernel_size=3, stride=1, padding=1),
+    nn.Sigmoid()
+).cuda()
+```
+
+Using model summary, we can see the network's structure when given an input of shape (3,720,1280), this being the resolution of the collected colour images.
+
+{{< img src="images/simpleCNN.png" align="center" >}} 
+*Figure 6: A simple CNN architecture used to convert colour images to depth images.*
+{{< vs 3 >}}
+
+After creating the pytorch model, a training loop was developed to train the network on the training dataset whilst validating with the validation dataset.
