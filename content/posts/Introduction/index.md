@@ -24,7 +24,7 @@ If you wish to read the original Jupyter notebook from the project then feel fre
 
 ### Project proposal
 
-The goal of the original project was to create a dataset of RGBA and depth image pairs from the popular video game Grand Theft Auto V, GTAV. This dataset would then be used to train a convolutional neural network to predict a depth image from an RGBA image. Using the trained model, a dataset of real-life images was used to evaluate the model's ability to predict real-world depth after training on this synthetic video game data. I will upload the entire project proposal document for you to read at your leisure, but this is the gist of the project.
+The goal of the original project was to create a dataset of RGB and depth image pairs from the popular video game Grand Theft Auto V, GTAV. This dataset would then be used to train a convolutional neural network to predict a depth image from an RGB image. Using the trained model, a dataset of real-life images was used to evaluate the model's ability to predict real-world depth after training on this synthetic video game data. I will upload the entire project proposal document for you to read at your leisure, but this is the gist of the project.
 
 
 {{< img src="images/colour_simple.png" align="center" >}} 
@@ -73,6 +73,11 @@ During the project, only the Simple and moderate datasets were collected. The mo
 {{< img src="images/moderate_data.png" align="center" >}} 
 *Figure 5: Moderate dataset overview collected from GTAV.*
 {{< vs 3 >}}
+
+Points to improve:
+- Data collected is inaccessible and inflexible
+- Data is not versioned
+- Metadata saved in external .csv file
 
 ### Data preprocessing
 
@@ -185,6 +190,13 @@ val_dl = DataLoader(val_dataset,  batch_size=batch_sz, shuffle=True,  num_worker
 test_dl = DataLoader(test_dataset,  batch_size=batch_sz, shuffle=True,  num_workers=0) # Test dataloader
 ```
 
+Points to improve
+- Inflexible dataset reading, can't add new data easily
+- None of the code is unit tested
+- Inconsistent naming conventions
+- Hard coded values and filepaths
+- If-Else statements aplenty
+
 ### Defining the model
 
 A simple CNN architecture was developed as a baseline model to compare performance against. Ideally, the team planned on using a more complex model to experiment with but time constraints made this unfeasable. The neural network is defined with pytorch to be the following:
@@ -208,4 +220,117 @@ Using model summary, we can see the network's structure when given an input of s
 *Figure 6: A simple CNN architecture used to convert colour images to depth images.*
 {{< vs 3 >}}
 
-After creating the pytorch model, a training loop was developed to train the network on the training dataset whilst validating with the validation dataset.
+After creating the pytorch model, a training loop was developed to train the network on the training dataset whilst validating with the validation dataset. A description of the hyperparameters used to train the model can be seen below.
+
+{{< img src="images/simplecnn_desc.png" align="center" >}} 
+*Figure 7: Simple CNN hyperparameters and tracked variables during training.*
+{{< vs 3 >}}
+
+Points to improve
+- Hyperparameter search
+- Experiment tracking
+- Different model architecture search
+
+The training loop itself can be seen below.
+
+``` python
+def fit(net, tr_dl, val_dl, loss=nn.MSELoss(), epochs=3, lr=3e-3, wd=1e-3):   
+
+    Ltr_hist, Lval_hist = [], []    
+    opt = optim.Adam(net.parameters(), lr=lr, weight_decay=wd)
+    for epoch in trange(epochs):
+        
+        L = []
+        dl = (iter(tr_dl))
+        count_train = 0
+        for xb, yb in tqdm(dl, leave=False):
+            xb, yb = xb.float(), yb.float()
+            xb, yb = xb.cuda(), yb.cuda()
+            y_ = net(xb)
+            l = loss(y_, yb)
+            opt.zero_grad()
+            l.backward()
+            opt.step()
+            L.append(l.detach().cpu().numpy())
+            print(f"Training on batch {count_train} of {int(train_size/batch_sz)}")
+            count_train+= 1
+
+        # disable gradient calculations for validation
+        for p in net.parameters(): p.requires_grad = False
+
+        Lval, Aval = [], []
+        val_it = iter(val_dl)
+        val_count = 0
+        for xb, yb in tqdm(val_it, leave=False):
+            xb, yb = xb.float(), yb.float()
+            xb, yb = xb.cuda(), yb.cuda()
+            y_ = net(xb)
+            l = loss(y_, yb)
+            Lval.append(l.detach().cpu().numpy())
+            Aval.append((y_.max(dim=1)[1] == yb).float().mean().cpu().numpy())
+            print(f"Validating on batch {val_count} of {int(val_size/batch_sz)}")
+            val_count+= 1
+
+        # enable gradient calculations for next epoch 
+        for p in net.parameters(): p.requires_grad = True 
+            
+        Ltr_hist.append(np.mean(L))
+        Lval_hist.append(np.mean(Lval))
+        print(f'training loss: {np.mean(L):0.4f}\tvalidation loss: {np.mean(Lval):0.4f}\tvalidation accuracy: {np.mean(Aval):0.2f}')
+    return Ltr_hist, Lval_hist
+```
+
+Just like the code seen before, there are quite a few improvements that can be made to bring the quality to a higher standard. Some of these include:
+
+- Remove timing iterators
+- Naming conventions
+- Remove print functions
+- Tracking/ logging during training
+- Model versioning
+
+### Model evaluation
+
+A trained SimpleCNN model was saved so that it could be reused for the evaluation stage at a later date. This worked for the project, but a more rigorous approach can be used in future. Linking the model to the data used to train it and the hyperparameters used during training for example. Along with this, storing the model in a repository so that other users can easily access it and understand where it came from and how it was trained.
+
+During the evaluation stage, the validation dataset was used to predict depth images from the RGB images. A series of metrics were then calculated to compare the predicted depth images and the ground truth data. This process was then repeated for the test set data that the model was not trained with. In total, nine metrics were calculated for all 786 test images. For this testing dataset, the mean and standard deviation of these metrics were calculated. A list of these metrics for the validation and test sets can be seen below.
+
+{{< img src="images/val_test_errors.png" align="center" >}} 
+*Figure 8: Calculated metrics with their mean and standard deviations for the validation and test datasets.*
+{{< vs 3 >}}
+
+
+After evaluation on the test set, some discussion of the metrics was made to understand the predictions made by the model. It would have been nice to see some more visual analysis, perhaps an ablation study to assess the features in different layers of the CNN. It would have also been nice to see some side-by-side comparisons of the depth image predictions and ground truths to look for artefacts where the model is lacking in accuracy. Since metrics were calculated in a pixel-wise fashion, it would be interesting to see them plotted as an image where each pixel represents the metric calculated at that point in the image. This would help give a visual representation of where in the image the error metrics are high and low along with any other high level features that may be occuring.
+
+An external dataset, called the KITTI dataset, was also used for evaluation. A subset of the KITTI dataset used for evaluation consisted of 1000 RGB, depth image pairs taken from Lidar sensors attatched to a car that was driving down a suburban road.
+
+{{< img src="images/kittiRGB.png" align="center" >}} 
+*Figure 9: Sample RGB image from the KITTI dataset.*
+{{< vs 3 >}}
+
+{{< img src="images/kittidepth.png" align="center" >}} 
+*Figure 10: Associated depth image from KITTI dataset.*
+{{< vs 3 >}}
+
+{{< img src="images/simplekittidepth.png" align="center" >}} 
+*Figure 11: Predicted depth image from SimpleCNN model.*
+{{< vs 3 >}}
+
+Additional explanation of the depth images generated from predictions of the SimpleCNN model would be nice. It would be interesting to explain the colours used in the plots and the min/max values of each depth image to better understand what has been calculated. A list of relationships required to do this are highlighted below.
+
+{{< img src="images/requiredData.png" align="center" >}} 
+*Figure 12: Additional relationships required to progress the evaluation of the SimpleCNN's predictions against the KITTI benchmark.*
+{{< vs 3 >}}
+
+Error metrics were calculated with a mean and standard deviation allowing paving way for hypothesis testing upon changing model hyperparameters. Unfortunately, the error metrics calculated are missing some scaling factors to allow for direct comparison between the Moderate dataset depth predictions and the KITTI dataset depth. If these factors are found, this will allow a swath of analysis to be conducted. Conversions from the current error values to SI units would be a great improvement.
+
+Error analysis can be improved by assessing the quality of the metrics themselves and interpreting their meaning in relation to the task. During my physics degree, I enjoyed this aspect of analysis. As such, in this revamp of the project I'm keen to look more in depth at the error analysis and metrics.
+
+Points to improve
+- Model versioning
+- Metric evaluation
+- Error analysis
+- Depth conversion and comparison
+
+### Summary
+
+Having looked through the project, there are many good techniques used and a good overarching method. To take the project to another level it will be useful to flesh out the experimentation procedure and increase the reusability and scalability of the code used. 
