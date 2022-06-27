@@ -333,4 +333,4 @@ Points to improve
 
 ### Summary
 
-Having looked through the project, there are many good techniques used and a good overarching method. To take the project to another level it will be useful to flesh out the experimentation procedure and increase the reusability and scalability of the code used. 
+Having looked through the project, there are many good techniques used and a decent overarching methodology presented. To take the project to another level it will be useful to flesh out the experimentation procedure and increase the reusability and scalability of the code used. Best practices involving unit testing, code versioning, continuous integration/ continuous deployment, and code documentation are to be used. Utilising these best practices will make the project more robust and scalable. Read the next post to see what the first steps of this process are.
