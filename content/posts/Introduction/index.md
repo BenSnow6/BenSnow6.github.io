@@ -1,7 +1,7 @@
 ---
 title: "Depth estimation project review"
-date: 2022-06-17T08:06:25+06:00
-description: Introduction to Sample Post
+date: 2022-06-27T08:06:25+06:00
+description: Depth Estimation project in review
 menu:
   sidebar:
     name: Introduction
