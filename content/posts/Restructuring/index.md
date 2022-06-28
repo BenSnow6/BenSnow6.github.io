@@ -13,7 +13,7 @@ categories: ["Basic"]
 
 ### Introduction
 
-Jumping right in, let's start off by creating a new folder on the desktop, a new conda environment, and activate that environment.
+Jumping right in, let's start by creating a new folder on the desktop, a new conda environment, and activate that environment.
 
 ```bash
 mkdir ~/Desktop/DepthEstimation
@@ -39,5 +39,9 @@ Installing the required dependencies is as simple as running the following comma
 pip install -r requirements.txt
 ```
 
-After installing the dependencies, we push the repository to github on the main branch which can be seen at the following address; https://github.com/BenSnow6/DepthEstimation. Instead of working on this main branch, I will create a pull request from this main branch, develop a feature on this branch, and then merge the pull request to the main branch. This will ensure that the main branch is never directly edited and is only updated when the CI pipeline tests pass. This will be covered in a later section. For now, let's open a pull request.
+After installing the dependencies, we push the repository to github on the main branch which can be seen at the following address; https://github.com/BenSnow6/DepthEstimation. Instead of working on this main branch, I will create a new branch, develop a feature on this branch, and then merge the with a pull request to the main branch. This will ensure that the main branch is never directly edited and is only updated when the CI pipeline tests pass. This will be covered in a later section. For now, let's create a new branch called 'NotebookExploration' and open that in our IDE.
+
+
+
+
 
