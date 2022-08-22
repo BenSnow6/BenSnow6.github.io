@@ -8,7 +8,7 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Machine Learning specialist
+designation: Machine Learning Specialist
 # your company information
 company:
   name: SnowStreamIntelligence
