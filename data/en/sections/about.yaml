@@ -8,10 +8,10 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Machine learning specialist
+designation: Machine Learning specialist
 # your company information
 company:
-  name: SnowStreamIntelligence Limited
+  name: SnowStreamIntelligence
   url: "https://bensnow6.github.io/"
 
 # your resume. this file path should be relative to you "static" directory
@@ -19,11 +19,9 @@ resume: "files/BenSnowResume.pdf"
 
 # a summary about you
 summary: 'I am an independent machine learning contractor who is passionate about computer vision and artificial intelligence.
-During my EngD, I have gained research experience working with depth estimation models and denoising diffusion probabilistic modelling.
+During my EngD, I gained research experience with depth estimation and denoising diffusion probabilistic modelling.
 I am keenly interested in Machine learning, specifically in productionisation of machine learning from proof-of-concept
- research into usable, scalable business products. My experience as a research involved building a
-  realistic [Hovercraft Training Simulator](https://www.youtube.com/watch?v=fW1yrfLfIqA) from scratch in C++ with 
-  the Unreal Engine for Griffon Hoverwork Ltd. I am currently looking for Outside IR35 contract work in machine learning and computer vision.'
+ research into usable, scalable business products. I am currently looking for Outside IR35 contract work in machine learning and computer vision.'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
