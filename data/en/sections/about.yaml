@@ -18,11 +18,11 @@ company:
 resume: "files/BenSnowResumeAug2022.pdf"
 
 # a summary about you
-summary: 'I am an independent machine learning contractor who is passionate about computer vision and artificial intelligence.
+summary: "I am an independent machine learning contractor who is passionate about computer vision and artificial intelligence.
 During my EngD, I gained research experience with many computer vision concepts including depth estimation and denoising diffusion probabilistic modelling.
 I am keenly interested in turning proof-of-concept research into usable, scalable business products.
 My training as an Experimental Physicist in Manchester's Graphene and 2D materials group guides my scientific approach.
-I am currently looking for Outside IR35 contract work in machine learning and computer vision.'
+I am currently looking for Outside IR35 contract work in machine learning and computer vision."
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
