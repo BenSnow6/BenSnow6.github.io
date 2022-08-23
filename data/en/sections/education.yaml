@@ -26,6 +26,8 @@ degrees:
     - name: Computer Vision (86%)
     - name: Animation Software Engineering 
     - name: CGI Techniques
+  extracurricularActivities: #(optional)
+  - Peer reviewer for numerous journals articles for topics including Smooth Partical Hydrodynamics, Denoising Diffusion Probabilistic Modelling, Facial Landmark Detection
 - name: Master of Physics (MPhys)
   icon: fa-graduation-cap
   timeframe: 2015-2019

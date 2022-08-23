@@ -13,19 +13,19 @@ section:
 skills:
 - name: Unreal Engine
   logo: "images/sections/skills/Unreal_Engine_Logo.svg"
-  summary: "Capable of developing and deploying physics-based simulations with the Unreal Engine in C++ and Blueprints."
+  summary: "Wrote and deployed a physics-based hovercraft simulator for Griffon Hoverwork Ltd. to train pilots on how to drive hovercrafts. Written in C++ and blueprints in the Unreal Engine 4."
   url: "https://www.unrealengine.com/en-US"
 
 
 - name: Python
   logo: "images/sections/skills/python.png"
-  summary: "3 years experience including writing a machine learning pipeline for Monocular Depth estimation from an RGB image. Numerous data science packages including modin.pandas, numpy, pytorch, and keras."
+  summary: "4 years experience including writing a machine learning pipeline for Monocular Depth estimation from an RGB image. Numerous data science packages including Tensorflow, pandas, numpy, PyTorch, and Keras."
   url: "https://www.python.org/"
 
 
 - name: C++
   logo: "images/sections/skills/cpp.png"
-  summary: "Used in conjunction with Unreal Engine 4 to solve physics equations in real-time for the thrust, drag, and lift forces acting on a hovercraft."
+  summary: "Used in conjunction with Unreal Engine 4 to solve physics equations with numerical methods in real-time for the thrust, drag, and lift forces acting on a hovercraft."
   url: "https://cplusplus.com/"
 
 
@@ -39,14 +39,14 @@ skills:
 
 - name: git
   logo: "images/sections/skills/git.png"
-  summary: "Code versioning for various software projects, integrated with VS Code, my usual IDE."
+  summary: "Code versioning for various software projects, integrated with VS Code, my usual IDE. Github actions experience for creating automated workflows."
   url: "https://github.com/BenSnow6/"
 
 
 
 - name: Matlab
   logo: "images/sections/skills/matlab.png"
-  summary: "Finite difference method for solving the Navier-Stokes equations on a 2D grid for the Lid-Driven cavity problem."
+  summary: "From first principles simulation using a finite difference method to approximate the solution to the Navier-Stokes equations on a 2D grid for the Lid-Driven cavity problem."
   url: "https://uk.mathworks.com/products/matlab.html"
 
 
@@ -54,7 +54,7 @@ skills:
 
 - name: Latex
   logo: "images/sections/skills/latex.png"
-  summary: "Report writing and research paper experience with Overleaf including Mathjax."
+  summary: "Report writing and research paper experience with Overleaf including Mathjax. Experience as a technical specialist reviewing papers for conferences and journals in the field of machine learning."
   url: "https://www.overleaf.com/"
 
 
@@ -62,7 +62,7 @@ skills:
 
 - name: Unity
   logo: "images/sections/skills/unity.png"
-  summary: "Design and development of a 2D Drone delivery game for public outreach and data collection."
+  summary: "From scratch development of a mobile and tablet game for drone delivery using real-world risk and energy data. Set up an automatic data collection pipeline to collect data for a research paper investigating the perception of autonomous drone delivery across a broad spectrum of the general public."
   url: "https://unity.com/"
 
 
@@ -70,7 +70,7 @@ skills:
 
 - name: Origin
   logo: "images/sections/skills/origin.png"
-  summary: "Experience with Origin to perform data analysis on Lock-in amplifier data applying various curve fitting techniques to produce high-quality plots."
+  summary: "Experience with Origin to perform data analysis on lock-in amplifier data applying various curve fitting techniques to produce high-quality plots."
   url: "https://www.originlab.com/"
 
 
