@@ -19,7 +19,7 @@ skills:
 
 - name: Python
   logo: "images/sections/skills/python.png"
-  summary: "4 years experience including writing a machine learning pipeline for Monocular Depth estimation from an RGB image. Numerous data science packages including Tensorflow, pandas, numpy, PyTorch, and Keras."
+  summary: "4 years of experience including writing a machine learning pipeline for Monocular Depth estimation from an RGB image. Numerous data science packages including Tensorflow, pandas, numpy, PyTorch, and Keras."
   url: "https://www.python.org/"
 
 
