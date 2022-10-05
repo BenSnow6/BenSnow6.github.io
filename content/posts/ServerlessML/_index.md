@@ -4,6 +4,6 @@ menu:
   sidebar:
     name: Serverless ML
     identifier: sections
-    parent: configuration
+    parent: ServerlessML
     weight: 110
 ---
