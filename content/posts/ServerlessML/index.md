@@ -1,6 +1,6 @@
 ---
 title: "Serverless Machine Learning Module 0"
-date: 2022-06-27T08:06:25+06:00
+date: 2022-10-05T08:06:25+06:00
 description: Following along with the serverless-ml online course by Jim Dowling and Hopsworks.
 menu:
   sidebar:
