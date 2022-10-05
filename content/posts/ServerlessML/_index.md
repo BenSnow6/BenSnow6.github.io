@@ -1,5 +1,5 @@
 ---
-title: Sections
+title: Serverless ML
 menu:
   sidebar:
     name: Serverless ML
