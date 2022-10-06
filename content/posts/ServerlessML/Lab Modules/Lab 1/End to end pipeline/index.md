@@ -1,11 +1,11 @@
 ---
-title: "Serverless Machine Learning Module 1"
+title: "End to end pipeline"
 date: 2022-10-05
 description: Following along with the serverless-ml online course by Jim Dowling and Hopsworks.
 menu:
   sidebar:
-    name: Lab 1
-    identifier: ServerlessML-module1
+    name: End to End
+    identifier: End2End
     parent: Lab 1
     weight: 10
 tags: ["Serverless", "Pandas"]
