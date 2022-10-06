@@ -3,7 +3,7 @@ title: Lab Modules
 menu:
   sidebar:
     name: Lab Modules
-    identifier: Lab modules
+    identifier: lab
     parent: serverlessml
     weight: 10
 ---

@@ -6,6 +6,7 @@ menu:
   sidebar:
     name: Lab 1
     identifier: ServerlessML-module1
+    parent: lab
     weight: 10
 tags: ["Serverless", "Pandas"]
 categories: ["Basic"]
