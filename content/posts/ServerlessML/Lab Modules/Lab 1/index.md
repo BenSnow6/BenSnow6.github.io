@@ -19,6 +19,7 @@ categories: ["Basic"]
 
 We're looking at lab 1 of the [Serverless-ML course](https://www.serverless-ml.org/) today. Make sure to check out their website and their [Github repository and give them a star!](https://github.com/featurestoreorg/serverless-ml-course) 
 
+A link to my fork of the repo is [here](https://github.com/BenSnow6/serverless-ml-course/tree/main/src/01-module) if you wish to follow along with my notebooks!
 
 ## Introduction
 Following on from Module 0 labs we are now going to look into deploying an actual machine learning product to the web! How exciting! :D
@@ -29,6 +30,8 @@ The architecture of the end to end pipeline will look like this:
 | ![Pipeline](End2end.png) |
 |:--:|
 | <b>Fig 1. End to end machine learning pipeline for this first section of the lab.</b>|
+
+As you can see, data flows from one end of the pipeline to the other. Data is ingested from a CSV file, processed to create useful features, and then used to train a KNN model. The model is then evaluated and deployed to a web application with Gradio. The web application is then used to query the model and get a prediction.
 
 ## Downloading and visualising the data
 We start by reading in the data from a git-repo into a pd dataframe:
