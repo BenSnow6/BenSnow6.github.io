@@ -29,8 +29,10 @@ iris_df = pd.read_csv("https://repo.hops.works/master/hopsworks-tutorials/data/i
 ```
 It's a good idea to look at data throughout a project, so take some time here to inspect the data we have just downloaded. Creating box plots of the classes vs different attributes is a good way to go. Maybe we can determine some rules ourselves that would help us make a prediction about the classes ourselves. If we can create a few simple rules in our head or spot pattern, it's very likely a machine learning model will be able to do the same!
 
-![Fig 1. Sepal length vs plant variety. It looks like there already some distinctions between each of the classes...](iris_box_sepal.png "Sepal visualisation") 
 
+| ![Sepal visualisation](iris_box_sepal.png) |
+|:--:|
+| <b>Fig 1. Sepal length vs plant variety. It looks like there already some distinctions between each of the classes...</b>|
 
 
 ## Getting ready to fit a model
@@ -80,7 +82,9 @@ sns.heatmap(df_cm, annot=True)
 ```
 the results look like this:
 
-![Fig 2. Confusion matrix of the KNN model. It looks like the model did a great job of predicting Setosa and Virginica, but struggled a little with Virginica.](conf_matrix.png "Confusion matrix") 
+| ![Confusion matrix](conf_matrix.png) |
+|:--:|
+| <b>Fig 2. Confusion matrix of the KNN model. It looks like the model did a great job of predicting Setosa and Virginica, but struggled a little with Virginica.</b>|
 
 
 
@@ -146,11 +150,21 @@ demo = gr.Interface(
 # launch the model to the web!
 demo.launch(share=True)
 ```
-Let's have a look at it in the web app!
-![Fig 3. Gradio app interface. The user can interact with the input boxes and sliders and see the predicted flower image change.](gradio_app.png "Gradio app") 
+
+| ![Gradio app](gradio_app.png) |
+|:--:|
+| <b>Fig 3. Gradio app interface. The user can interact with the input boxes and sliders and see the predicted flower image change.</b>|
 
 How jazzy is that? That's far better than the confusion matrix we used saw earlier isn't it? It's interactive, anyone can use it and play around, and it shows off how quick and powerful the model is!!
 
 I love it!
 
 You can have a go of the web app here until the 8th of October 2022 [here](https://23930.gradio.app).
+
+
+### Bonus 
+As a bonus, I came across this lovely picture of hot air balloons when I was looking up some formatting tips for markdown. I thought I'd share it with you all!
+
+| ![space-1.jpg](https://blog-assets.thedyrt.com/uploads/2019/01/shutterstock_1033306540-1.jpg) |
+|:--:|
+| <b>Image Credits - thedryrt.com</b>|
