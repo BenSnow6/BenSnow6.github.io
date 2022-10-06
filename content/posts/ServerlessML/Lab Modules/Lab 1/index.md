@@ -29,7 +29,8 @@ iris_df = pd.read_csv("https://repo.hops.works/master/hopsworks-tutorials/data/i
 ```
 It's a good idea to look at data throughout a project, so take some time here to inspect the data we have just downloaded. Creating box plots of the classes vs different attributes is a good way to go. Maybe we can determine some rules ourselves that would help us make a prediction about the classes ourselves. If we can create a few simple rules in our head or spot pattern, it's very likely a machine learning model will be able to do the same!
 
-![](iris_box_sepal.png "Sepal visualisation") Fig 1. Sepal length vs plant variety. It looks like there already some distinctions between each of the classes...
+![Fig 1. Sepal length vs plant variety. It looks like there already some distinctions between each of the classes...](iris_box_sepal.png "Sepal visualisation") 
+
 
 
 ## Getting ready to fit a model
@@ -78,7 +79,10 @@ df_cm = pd.DataFrame(results, ['True Setosa', 'True Versicolor', 'True Virginica
 sns.heatmap(df_cm, annot=True)
 ```
 the results look like this:
-![](conf_matrix.png "Confusion matrix") Fig 2. Confusion matrix of the KNN model. It looks like the model did a great job of predicting Setosa and Virginica, but struggled a little with Virginica.
+
+![Fig 2. Confusion matrix of the KNN model. It looks like the model did a great job of predicting Setosa and Virginica, but struggled a little with Virginica.](conf_matrix.png "Confusion matrix") 
+
+
 
 The model correctly classified all of the items in the test set apart from one Virginica flower which it incorrectly predicted to be Versicolor.
 
@@ -143,10 +147,10 @@ demo = gr.Interface(
 demo.launch(share=True)
 ```
 Let's have a look at it in the web app!
-![](gradio_app.png "Gradio app") Fig 3. Gradio app interface. The user can interact with the input boxes and sliders and see the predicted flower image change.
+![Fig 3. Gradio app interface. The user can interact with the input boxes and sliders and see the predicted flower image change.](gradio_app.png "Gradio app") 
 
 How jazzy is that? That's far better than the confusion matrix we used saw earlier isn't it? It's interactive, anyone can use it and play around, and it shows off how quick and powerful the model is!!
 
 I love it!
 
-You can have a go of the web app here until the 8th of October 2022 [here](https://28691.gradio.app).
+You can have a go of the web app here until the 8th of October 2022 [here](https://23930.gradio.app).
