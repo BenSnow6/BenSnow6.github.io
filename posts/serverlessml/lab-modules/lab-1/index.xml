@@ -2,4 +2,7 @@
 Lab 1 End to end pipeline #machinelearning #course #hopsworks #serverless #gradio
 We&amp;rsquo;re looking at lab 1 of the Serverless-ML course today. Make sure to check out their website and their Github repository and give them a star!
 A link to my fork of the repo is here if you wish to follow along with my notebooks!
-Introduction Following on from Module 0 labs we are now going to look into deploying an actual machine learning product to the web!</description></item></channel></rss>
+Introduction Following on from Module 0 labs we are now going to look into deploying an actual machine learning product to the web!</description></item><item><title>Refactoring the pipeline</title><link>https://BenSnow6.github.io/posts/serverlessml/lab-modules/lab-1/refactoring/</link><pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate><guid>https://BenSnow6.github.io/posts/serverlessml/lab-modules/lab-1/refactoring/</guid><description>06/10/2022
+Refactoring Our little web app in the previous article is nice but it&amp;rsquo;s quite rigid in structure, very reliant on the notebook, doesn&amp;rsquo;t allow for new data to be added, and can&amp;rsquo;t work standalone. Let&amp;rsquo;s take some steps to refactor this pipeline and deploy it in a better way.
+The new architecture for the pipeline we wish to implement will look like this !
+Fig 1.</description></item></channel></rss>
