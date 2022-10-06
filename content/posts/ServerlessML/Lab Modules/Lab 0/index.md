@@ -14,7 +14,10 @@ categories: ["Basic"]
 
 05/10/2022
 ## Intro
-This course aims to allow a data scientist to deploy machine learning and predictive services online without the use of a server. This is useful in creating powerful business applications to show the predictive effect of a machine learning model quickly and effectively.
+
+We're looking at lab 0 of the [Serverless-ML course](https://www.serverless-ml.org/) today. Make sure to check out their website and their [Github repository and give them a star!](https://github.com/featurestoreorg/serverless-ml-course) 
+
+This course aims to allow a data scientist to deploy machine learning and predictive services online without the use of a server. This is useful in creating powerful business applications to show the predictive capabilities of a machine learning model quickly and effectively.
 
 ## Labs
 ### Pandas
