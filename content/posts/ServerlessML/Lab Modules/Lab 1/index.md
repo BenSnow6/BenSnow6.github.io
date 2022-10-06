@@ -25,6 +25,11 @@ Following on from Module 0 labs we are now going to look into deploying an actua
 
 We are going to investigate the notorious Iris dataset and create several models to predict the variety of flower given a set of characteristics about flowers. This is a simple classification problem and we will use sklearn and pandas to create dataframes, split training and test sets, create a KNN model, evaluate this model, and then query the model! Visualisation with seaborn is used throughout.
 
+The architecture of the end to end pipeline will look like this:
+| ![Pipeline](End2end.png) |
+|:--:|
+| <b>Fig 1. End to end machine learning pipeline for this first section of the lab.</b>|
+
 ## Downloading and visualising the data
 We start by reading in the data from a git-repo into a pd dataframe:
 ```python
@@ -35,7 +40,7 @@ It's a good idea to look at data throughout a project, so take some time here to
 
 | ![Sepal visualisation](iris_box_sepal.png) |
 |:--:|
-| <b>Fig 1. Sepal length vs plant variety. It looks like there already some distinctions between each of the classes...</b>|
+| <b>Fig 2. Sepal length vs plant variety. It looks like there already some distinctions between each of the classes...</b>|
 
 
 ## Getting ready to fit a model
@@ -87,7 +92,7 @@ the results look like this:
 
 | ![Confusion matrix](conf_matrix.png) |
 |:--:|
-| <b>Fig 2. Confusion matrix of the KNN model. It looks like the model did a great job of predicting Setosa and Virginica, but struggled a little with Virginica.</b>|
+| <b>Fig 3. Confusion matrix of the KNN model. It looks like the model did a great job of predicting Setosa and Virginica, but struggled a little with Virginica.</b>|
 
 
 
@@ -156,7 +161,7 @@ demo.launch(share=True)
 
 | ![Gradio app](gradio_app.png) |
 |:--:|
-| <b>Fig 3. Gradio app interface. The user can interact with the input boxes and sliders and see the predicted flower image change.</b>|
+| <b>Fig 4. Gradio app interface. The user can interact with the input boxes and sliders and see the predicted flower image change.</b>|
 
 How jazzy is that? That's far better than the confusion matrix we used saw earlier isn't it? It's interactive, anyone can use it and play around, and it shows off how quick and powerful the model is!!
 
@@ -170,4 +175,4 @@ As a bonus, I came across this lovely picture of hot air balloons when I was loo
 
 | ![space-1.jpg](https://blog-assets.thedyrt.com/uploads/2019/01/shutterstock_1033306540-1.jpg) |
 |:--:|
-| <b>Image Credits - shutterstock.com</b>|
+| <b>Fig 5: Image Credits - shutterstock.com</b>|
