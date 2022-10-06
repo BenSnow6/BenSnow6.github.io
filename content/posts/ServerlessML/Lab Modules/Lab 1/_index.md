@@ -4,6 +4,6 @@ menu:
   sidebar:
     name: Lab 1
     identifier: Lab 1
-    parent: serverlessml
+    parent: lab
     weight: 10
 ---
