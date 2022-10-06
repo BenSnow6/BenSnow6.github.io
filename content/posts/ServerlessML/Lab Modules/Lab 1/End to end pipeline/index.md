@@ -19,7 +19,7 @@ categories: ["Basic"]
 
 We're looking at lab 1 of the [Serverless-ML course](https://www.serverless-ml.org/) today. Make sure to check out their website and their [Github repository and give them a star!](https://github.com/featurestoreorg/serverless-ml-course) 
 
-A link to my fork of the repo is [here](https://github.com/BenSnow6/serverless-ml-course/tree/main/src/01-module) if you wish to follow along with my notebooks!
+[A link to my fork of the repo is here](https://github.com/BenSnow6/serverless-ml-course/tree/main/src/01-module) if you wish to follow along with my notebooks!
 
 ## Introduction
 Following on from Module 0 labs we are now going to look into deploying an actual machine learning product to the web! How exciting! :D
