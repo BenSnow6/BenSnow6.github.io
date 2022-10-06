@@ -17,6 +17,8 @@ categories: ["Basic"]
 
 We're looking at lab 0 of the [Serverless-ML course](https://www.serverless-ml.org/) today. Make sure to check out their website and their [Github repository and give them a star!](https://github.com/featurestoreorg/serverless-ml-course) 
 
+A link to my fork of the repo is [here](https://github.com/BenSnow6/serverless-ml-course/tree/main/src/00-intro) if you wish to follow along with my notebooks!
+
 This course aims to allow a data scientist to deploy machine learning and predictive services online without the use of a server. This is useful in creating powerful business applications to show the predictive capabilities of a machine learning model quickly and effectively.
 
 ## Labs
