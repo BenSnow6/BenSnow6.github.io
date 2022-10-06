@@ -4,5 +4,5 @@ menu:
   sidebar:
     name: Serverless ML
     identifier: serverlessml
-    weight: 110
+    weight: 60
 ---

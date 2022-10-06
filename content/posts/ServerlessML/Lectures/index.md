@@ -1,9 +1,9 @@
 ---
-title: Lab Modules
+title: Lectures
 menu:
   sidebar:
-    name: Lab Modules
-    identifier: lab
+    name: Lectures
+    identifier: lectures
     parent: serverlessml
     weight: 10
 ---
