@@ -14,7 +14,7 @@ categories: ["Basic"]
 
 05/10/2022
 
-# Lab 1 Serverless Machine Learning
+# Lab 1 End to end pipeline
 #machinelearning #course #hopsworks #serverless #gradio
 
 We're looking at lab 1 of the [Serverless-ML course](https://www.serverless-ml.org/) today. Make sure to check out their website and their [Github repository and give them a star!](https://github.com/featurestoreorg/serverless-ml-course) 
