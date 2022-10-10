@@ -1,5 +1,5 @@
 ---
-title: "Pytorch and setup"
+title: "FSDL Lab 1: PyTorch"
 date: 2022-10-10
 description: Following the first set of labs from the Full Stack Deep Learning course.
 menu:
@@ -17,7 +17,7 @@ categories: ["Basic"]
 # Lab 1 - Deep Neural Networks in PyTorch
 #machinelearning #course #fsdl
 
-Follow along with the [Lab 1 notebook](https://github.com/BenSnow6/FSDL_lab_1). Or check out the course website for the [Lab 1 slides](https://fullstackdeeplearning.com/course/2022/labs-1-3-cnns-transformers-pytorch-lightning/).
+Follow along with the [Lab 1 notebook](https://github.com/BenSnow6/FSDL_lab_1). Or check out the course website for the [Lab 1 notes](https://fullstackdeeplearning.com/course/2022/labs-1-3-cnns-transformers-pytorch-lightning/).
 ## Setup
 Using a bootstrap python file, the Colab environment is setup to pull the FSDL github repo and set the path variable, lab directory, hot reloading of modules, and inline plotting.
 
