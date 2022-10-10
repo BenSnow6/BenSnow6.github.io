@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pytorch on Ben Snow's Blog</title><link>https://BenSnow6.github.io/tags/pytorch/</link><description>Recent content in pytorch on Ben Snow's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-uk</language><lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BenSnow6.github.io/tags/pytorch/index.xml" rel="self" type="application/rss+xml"/><item><title>FSDL Lab 1: PyTorch</title><link>https://BenSnow6.github.io/posts/fullstackdeeplearning/lab-modules/lab-1/pytorch/</link><pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate><guid>https://BenSnow6.github.io/posts/fullstackdeeplearning/lab-modules/lab-1/pytorch/</guid><description>10/10/2022
 Lab 1 - Deep Neural Networks in PyTorch #machinelearning #course #fsdl
-Follow along with the Lab 1 notebook. Or check out the course website for the Lab 1 notes.
+Follow along with the Lab 1 notebook. Or check out the course website for the Lab 1 slides.
 Setup Using a bootstrap python file, the Colab environment is setup to pull the FSDL github repo and set the path variable, lab directory, hot reloading of modules, and inline plotting.
 Downloading data We will be using the mnist dataset of handwritten digits.</description></item></channel></rss>
