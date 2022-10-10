@@ -6,7 +6,7 @@ menu:
   sidebar:
     name: Pytorch and setup
     identifier: pytorch
-    parent: lab-fsdl
+    parent: Lab 1 fsdl
     weight: 10
 tags: ["FSDL", "pytorch"]
 categories: ["Basic"]
