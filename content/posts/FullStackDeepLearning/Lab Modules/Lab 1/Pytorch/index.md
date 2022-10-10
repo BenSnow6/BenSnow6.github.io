@@ -17,7 +17,7 @@ categories: ["Basic"]
 # Lab 1 - Deep Neural Networks in PyTorch
 #machinelearning #course #fsdl
 
-Follow along with the [Lab 1 notebook](https://github.com/BenSnow6/FSDL_lab_1). Or check out the course website for the [Lab 1 notes](https://fullstackdeeplearning.com/course/2022/labs-1-3-cnns-transformers-pytorch-lightning/).
+Follow along with the [Lab 1 notebook](https://github.com/BenSnow6/FSDL_lab_1). Or check out the course website for the [Lab 1 slides](https://fullstackdeeplearning.com/course/2022/labs-1-3-cnns-transformers-pytorch-lightning/).
 ## Setup
 Using a bootstrap python file, the Colab environment is setup to pull the FSDL github repo and set the path variable, lab directory, hot reloading of modules, and inline plotting.
 
@@ -30,20 +30,21 @@ Gzip and pickle are used to open the file and extract the contents into ((x_trai
 
 For us to use PyTorch, we must convert all arrays to tensors. This is done by mapping the four arrays to torch.tensors.
 
-## Tensors
-Shape and dimension
+### Tensors
 
-The dimension of a tensor specifies how many indices you need to get a number out of an array.
-e.g. 2 for a 2D tensor with rows and columns.
-Use .ndim on a tensor to return its dimension
+The dimension of a tensor specifies how many indices you need to get a number out of an array. A 2D tensor with rows and columns has dimension 2. Use `.ndim` on a tensor to return its dimension
 
-Shape tells you how many entries there are in a ONE DIMENSIONAL tensor.
-Shape tells you how many rows and columns there are in a TWO DIMENSIONAL tensor.
-Use .shape on a tensor to return its shape
+Shape tells you how many entries there are in a 1D tensor.
+For a 2D tensor, shape tells you how many rows and columns there are.
+Use `.shape` on a tensor to return its shape.
 
 
-## Showing example images
-It is always useful to look at your data along the way. Using random.randomint and wandb, we show the label of the image and the image itself from a random index of the training data.
+### Showing example images
+It is always useful to look at your data along the way. Using random.randomint and wandb, we show the label of the image and the image itself from a random index of the training data. Let's take a look at the first few images in the training set:
+
+| ![MNIST](images/mnist.png) |
+|:--:|
+| <b>Fig 1. A mosaic of handwritten digits and their associated labels from the training dataset.</b>|
 
 # Building a DNN with torch.Tensor
 Let's start simple and try to build a network that fits x_train to y_train with basic torch components.
@@ -248,3 +249,57 @@ model.children() # returns the Linear layer with in_features=784, out_features =
 model.parameters() # returns the weight and bias parameters
 ```
 
+### Gradients
+
+We can calculate the gradients with the torch.optim.Optimizer class like so:
+```python
+from torch import optim
+def configure_optimizer(model: nn.Modlue) -> optim.Optimizer: # returns an optimizer
+	return optim.Adam(model.parameters(), lr=3e-4) # Adam optimizer with learning rate of 3e-4
+```
+
+We can then use this optimizer to update the parameters with `opt.setp()` and `opt.zero_grad()`. With these functions, we can shorten the training loop further.
+
+## Datasets
+We'd rather not handle the dataset manually, so let's abstract some of that away. We can use the `torch.utils.data.Dataset` class to create a dataset class that we can use to iterate over batches of data. We can then use the `torch.utils.data.DataLoader` class to create a data loader that we can use to iterate over batches of data.
+
+We use the `BaseDataset` class as a starting point from the `text_recognizer` library and create the following:
+```python
+from text_recognizer.data.util import BaseDataset
+train_ds = BaseDataset(X_train, y_train)
+```
+Rather than using this and creating our own batches of data, we can use a DataLoader to do this for us. We can create a data loader with:
+```python
+from torch.utils.data import DataLoader
+train_dl = DataLoader(train_ds, batch_size=bs)
+```
+We can then define a fit function that uses the data loader to iterate over batches of data and assign it to our model class.
+```python
+def fit(self: nn.Module, train_dl: DataLoader):
+	"""
+	Trains the model on the training data using a dataloader
+	"""
+	opt = configure_optimizer(self)
+	for epoch in range(epochs):
+		for xb, yb in train_dl:
+			pred = model(xb)
+			loss = loss_func(pred, yb)
+
+			loss.backward()
+			opt.step()
+			opt.zero_grad()
+
+MNISTLogistic.fit = fit
+```
+
+After this, it's super easy to create a model and train it:
+```python
+model = MNISTLogistic()
+model.fit(train_dl)
+```
+
+Super! So much better than what we had before!
+
+What's even better is we can easily swap out the model for a different model!
+
+We will continue the rest of this lab tomorrow (11/10/2020)! Stay tuned :D <3
