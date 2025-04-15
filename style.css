@@ -1,0 +1,124 @@
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #f6f8fc 0%, #e0e7ff 100%);
+  color: #222;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #4f8cff;
+  color: #fff;
+  padding: 2.5rem 1rem 1.5rem 1rem;
+  border-bottom-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+  box-shadow: 0 2px 16px rgba(79,140,255,0.08);
+}
+
+.profile-pic img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 1rem;
+}
+
+.intro h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0.3rem 0 0.7rem 0;
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: underline;
+  margin-right: 0.7em;
+}
+
+main {
+  max-width: 700px;
+  margin: 2.5rem auto 0 auto;
+  padding: 0 1.2rem;
+}
+
+h2 {
+  color: #4f8cff;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+ul {
+  padding-left: 1.2em;
+}
+
+.papers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.paper h3 {
+  margin-bottom: 0.2rem;
+  font-size: 1.15rem;
+  color: #2d3a4e;
+  font-weight: 700;
+}
+
+.paper p {
+  margin: 0 0 0.2rem 0;
+  color: #444;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 0 1rem 0;
+  background: none;
+  font-size: 0.95rem;
+  color: #888;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 1.3rem 0.3rem 1rem 0.3rem;
+  }
+  .intro h1 {
+    font-size: 1.7rem;
+  }
+  main {
+    padding: 0 0.3rem;
+  }
+}
+
+/* Playful accent */
+h2::after {
+  content: ' ✦';
+  color: #ffb300;
+  font-size: 1.1em;
+  vertical-align: middle;
+}
+
+.paper {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(79,140,255,0.06);
+  padding: 1rem 1.1rem 0.7rem 1.1rem;
+}
+
+section {
+  margin-bottom: 2.3rem;
+}
