@@ -1,124 +1,401 @@
-body {
-  font-family: 'Montserrat', Arial, sans-serif;
+:root {
+  --primary-color: #2c5aa0;
+  --accent-color: #ff6b6b;
+  --text-dark: #2d3748;
+  --text-light: #718096;
+  --bg-light: #f7fafc;
+  --bg-white: #ffffff;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+* {
   margin: 0;
   padding: 0;
-  background: linear-gradient(120deg, #f6f8fc 0%, #e0e7ff 100%);
-  color: #222;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text-dark);
+  background: var(--bg-light);
+  line-height: 1.6;
   min-height: 100vh;
 }
 
+/* Header with banner image */
 header {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  background: #4f8cff;
-  color: #fff;
-  padding: 2.5rem 1rem 1.5rem 1rem;
-  border-bottom-left-radius: 36px;
-  border-bottom-right-radius: 36px;
-  box-shadow: 0 2px 16px rgba(79,140,255,0.08);
+  justify-content: center;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  max-width: 800px;
 }
 
 .profile-pic img {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  margin-bottom: 1rem;
+  border: 4px solid rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 1.5rem;
 }
 
 .intro h1 {
-  margin: 0;
   font-size: 2.5rem;
   font-weight: 700;
-  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 400;
-  margin: 0.3rem 0 0.7rem 0;
+  margin-bottom: 0.5rem;
+  opacity: 0.95;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.contact {
+  font-size: 1rem;
 }
 
 .contact a {
-  color: #fff;
-  text-decoration: underline;
-  margin-right: 0.7em;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: border-color 0.3s ease;
+  margin: 0 0.5rem;
 }
 
+.contact a:hover {
+  border-bottom-color: white;
+}
+
+/* Main content */
 main {
-  max-width: 700px;
-  margin: 2.5rem auto 0 auto;
-  padding: 0 1.2rem;
-}
-
-h2 {
-  color: #4f8cff;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  letter-spacing: 0.5px;
-}
-
-ul {
-  padding-left: 1.2em;
-}
-
-.papers-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.3rem;
-}
-
-.paper h3 {
-  margin-bottom: 0.2rem;
-  font-size: 1.15rem;
-  color: #2d3a4e;
-  font-weight: 700;
-}
-
-.paper p {
-  margin: 0 0 0.2rem 0;
-  color: #444;
-}
-
-footer {
-  text-align: center;
-  padding: 1.5rem 0 1rem 0;
-  background: none;
-  font-size: 0.95rem;
-  color: #888;
-}
-
-@media (max-width: 600px) {
-  header {
-    padding: 1.3rem 0.3rem 1rem 0.3rem;
-  }
-  .intro h1 {
-    font-size: 1.7rem;
-  }
-  main {
-    padding: 0 0.3rem;
-  }
-}
-
-/* Playful accent */
-h2::after {
-  content: ' ✦';
-  color: #ffb300;
-  font-size: 1.1em;
-  vertical-align: middle;
-}
-
-.paper {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 1px 8px rgba(79,140,255,0.06);
-  padding: 1rem 1.1rem 0.7rem 1.1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
 }
 
 section {
-  margin-bottom: 2.3rem;
+  margin-bottom: 4rem;
+}
+
+h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--accent-color);
+}
+
+/* About section */
+#about p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+  max-width: 800px;
+}
+
+/* Education section */
+#education ul {
+  list-style: none;
+  padding: 0;
+}
+
+#education li {
+  margin-bottom: 1.2rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+#education li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+/* Featured Project */
+#featured-project {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  margin-bottom: 4rem;
+}
+
+.featured-content {
+  display: grid;
+  gap: 2rem;
+}
+
+.project-media {
+  margin-bottom: 2rem;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hook {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.call-to-action {
+  background: var(--bg-light);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.call-to-action h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.cta-contact {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.cta-contact a {
+  color: var(--accent-color);
+  text-decoration: none;
+  border-bottom: 2px solid var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.cta-contact a:hover {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.project-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+/* Papers */
+.papers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.paper {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paper:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.paper h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.paper h3 a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.paper h3 a:hover {
+  color: var(--accent-color);
+}
+
+.paper p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Partners */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.partner-logo {
+  width: 100%;
+  max-width: 150px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+  display: block;
+}
+
+.partner-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+  margin-top: 4rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+  transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+  opacity: 0.8;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  main {
+    padding: 2rem 1rem;
+  }
+  
+  #featured-project {
+    padding: 2rem 1.5rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .partners-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .partner-logo {
+    max-width: 100px;
+    height: 60px;
+  }
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
 }

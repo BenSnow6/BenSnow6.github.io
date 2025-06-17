@@ -8,25 +8,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Fira+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="profile-pic">
-      <img src="photos/profile.png" alt="Ben Snow profile photo" id="profile-photo"/>
-    </div>
-    <div class="intro">
-      <h1>Ben Snow</h1>
-      <p class="subtitle">EngD Researcher | Computational Physicist</p>
-      <p class="contact">
-        <a href="mailto:bensnows@gmail.com">bensnows@gmail.com</a> |
-        <a href="https://www.linkedin.com/in/Bensnow6">LinkedIn</a> |
-        <a href="https://github.com/BenSnow6">GitHub</a>
-      </p>
+  <header style="background-image: url('photos/banner.jpg')">
+    <div class="header-overlay">
+      <div class="header-content">
+        <div class="profile-pic">
+          <img src="photos/profile.png" alt="Ben Snow profile photo" id="profile-photo"/>
+        </div>
+        <div class="intro">
+          <h1>Ben Snow</h1>
+          <p class="subtitle">EngD Researcher | Computational Physicist</p>
+          <p class="tagline">Bridging simulation technology with real-world applications</p>
+          <p class="contact">
+            <a href="mailto:bensnows@gmail.com">bensnows@gmail.com</a> |
+            <a href="https://www.linkedin.com/in/Bensnow6">LinkedIn</a> |
+            <a href="https://github.com/BenSnow6">GitHub</a>
+          </p>
+        </div>
+      </div>
     </div>
   </header>
   <main>
     <section id="about">
       <h2>About Me</h2>
       <p>
-        I am an EngD candidate at Griffon Marine, focusing on amphibious simulations for pilot training (Advisor: Prof. Jian Chang). My academic background includes an MPhys from the University of Manchester, where I researched two-dimensional materials for graphene spintronics (Advisor: Dr. Ivan Vera-Marun), and a year abroad at the University of Maryland College Park.
+        I'm an EngD researcher developing cutting-edge simulation technologies that transform how we train, plan, and engage with complex systems. Currently at Griffon Marine with Prof. Jian Chang, I'm creating amphibious vehicle simulators that enhance pilot training safety and effectiveness.
+      </p>
+      <p>
+        My journey spans from quantum physics research in graphene spintronics at Manchester to immersive VR experiences that help communities understand emerging technologies. I believe in making complex technology accessible and understandable to everyone.
       </p>
     </section>
     <section id="education">
@@ -36,6 +44,52 @@
         <li><strong>MPhys, University of Manchester</strong> — 2-D materials for Graphene Spintronics applications. Advisor: Dr. Ivan Vera-Marun</li>
         <li><strong>Year Abroad, University of Maryland College Park</strong></li>
       </ul>
+    </section>
+    <section id="featured-project">
+      <h2>Featured Project: DronesAnywhereVR</h2>
+      <div class="featured-content">
+        <div class="project-media">
+          <img src="photos/DroneVrUser.jpg" alt="User experiencing DronesAnywhereVR" class="project-image">
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/Op9edDK_NJ8" title="DronesAnywhereVR Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="project-description">
+          <p class="hook">
+            Drone delivery technology is ready, but public perception isn't. DronesAnywhereVR bridges that gap by letting people experience drone deliveries right outside their own homes—before they actually arrive.
+          </p>
+          <p>
+            Our VR tool, developed with <a href="https://solent-transport.com/" target="_blank">Solent Transport</a>, simulates realistic drone operations in familiar spaces. Users can watch delivery drones fly overhead and see packages delivered by cable, complete with authentic sounds. The goal? That 'aha' moment when someone says: "OH! So that's what drone delivery looks like. I get it now!"
+          </p>
+          <div class="call-to-action">
+            <h3>Join Our Pilot Studies</h3>
+            <p>
+              We're seeking partners for pilot studies in an upcoming project. Whether you're a town planner, regulator, drone operator, or engaged citizen, join us in shaping the future of drone deployment. Our pilots explore critical questions around acceptable use, privacy, noise, and environmental impact with new immersive technologies.
+            </p>
+            <p class="cta-contact">
+              Ready to bring drone futures to your community? <a href="mailto:bensnows@gmail.com">Contact us to participate in a pilot study</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Other Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Hovercraft Simulator for Pilot Training</h3>
+          <p>Developed advanced simulation tools and physics models for Griffon Marine to enhance pilot training for amphibious vehicles, improving safety and reducing training costs.</p>
+        </div>
+        <div class="project-card">
+          <h3>Graphene Spintronics Research</h3>
+          <p>Investigated 2-D materials and their applications in next-generation electronic devices, focusing on spin transport phenomena in graphene-based structures.</p>
+        </div>
+        <div class="project-card">
+          <h3>Serious Game for Drone Logistics</h3>
+          <p>Created an interactive game to educate and engage the public on the societal impacts of drone logistics, winning recognition for innovative public engagement.</p>
+        </div>
+      </div>
     </section>
     <section id="papers">
       <h2>Papers & Publications</h2>
@@ -66,18 +120,24 @@
         </div>
       </div>
     </section>
-    <section id="projects">
-      <h2>Past Projects</h2>
-      <ul>
-        <li><strong>Hovercraft Simulator for Pilot Training:</strong> Developed simulation tools and models for Griffon Marine to enhance pilot training for amphibious vehicles.</li>
-        <li><strong>Graphene Spintronics Research:</strong> Investigated 2-D materials and their applications in next-generation electronic devices.</li>
-        <li><strong>Serious Game for Drone Logistics:</strong> Created a game to educate and engage the public on the societal impacts of drone logistics.</li>
-        <li><strong>Virtual Reality Drones Anywhere:</strong> A virtual reality experience using Street View Imagery to show logistics and delivery drones in familiar locations.</li>
-      </ul>
+    <section id="partners">
+      <h2>Partners & Collaborators</h2>
+      <div class="partners-grid">
+        <img src="photos/logos/griffon_marine.png" alt="Griffon Marine" class="partner-logo">
+        <img src="photos/logos/solent-transport-square-col-002-1.jpg" alt="Solent Transport" class="partner-logo">
+        <img src="photos/logos/Bournemouth University Logo Vector.svg" alt="Bournemouth University" class="partner-logo">
+        <img src="photos/logos/University_of_Manchester-Logo.wine.svg" alt="University of Manchester" class="partner-logo">
+        <img src="photos/logos/University of Southampton Logo Vector.svg" alt="University of Southampton" class="partner-logo">
+        <img src="photos/logos/University Of Leeds Logo Vector.svg" alt="University of Leeds" class="partner-logo">
+        <img src="photos/logos/university-college-london-ucl-vector-logo.svg" alt="UCL" class="partner-logo">
+        <img src="photos/logos/maryland.webp" alt="University of Maryland" class="partner-logo">
+        <img src="photos/logos/e-drone-project.png" alt="E-Drone Project" class="partner-logo">
+      </div>
     </section>
   </main>
   <footer>
-    <p> 2025 Ben Snow. All rights reserved.</p>
+    <p>I'm always open to chatting about simulation, hovercrafts, or applied physics — <a href="mailto:bensnows@gmail.com">drop me a message!</a></p>
+    <p class="copyright">© 2025 Ben Snow. All rights reserved.</p>
   </footer>
 </body>
 </html>
